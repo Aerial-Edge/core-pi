@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray
-from object_follower import ObjectFollower
+from .object_follower import ObjectFollower
 
 
 
@@ -13,11 +13,11 @@ class Controller(Node):
         self.object_follower = ObjectFollower()
 
 
-    def listener_callback(self, data):
-        self.object_follower(x=data[0], y=data[1], distance=data[2])
-        msg = Int32MultiArray()
-        msg.data = [self.object_follower.yaw_out, self.object_follower.throttle_out, self.object_follower.pitch_out ]
-        self.publisher.publish(msg)
+    def listener_callback(self, msg_in):
+        self.object_follower(x=msg_in.data[0], y=msg_in.data[1], distance=msg_in.data[2])
+        msg_out = Int32MultiArray()
+        msg_out.data = [self.object_follower.yaw_out, self.object_follower.throttle_out, self.object_follower.pitch_out ]
+        self.publisher.publish(msg_out)
 
 
 def main(args=None):

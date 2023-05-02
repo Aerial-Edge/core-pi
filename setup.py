@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'controller_node = drone_controller.controller_node:main',
+            'testsub = drone_controller.testsub:main',
         ],
     },
 )
