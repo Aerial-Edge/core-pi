@@ -21,8 +21,8 @@ class ObjectFollower:
     def tune_yaw(self, kp, ki, kd):
         self.yaw_pid.tune(kp, ki, kd)
 
-    def tune_altitude(self, kp, ki, kd):
+    def tune_throttle(self, kp, ki, kd):
         self.throttle_pid.tune(kp, ki, kd)
 
-    def tune_velocity(self, kp, ki, kd):
+    def tune_pitch(self, kp, ki, kd):
         self.pitch_pid.tune(kp, ki, kd)
