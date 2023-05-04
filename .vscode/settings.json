@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/martin/ros2_ws/build/drone_controller",
+        "/home/martin/ros2_ws/install/drone_controller/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/pi_img_processing/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/cv_basics/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/martin/ros2_ws/build/drone_controller",
+        "/home/martin/ros2_ws/install/drone_controller/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/pi_img_processing/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/martin/ros2_ws/install/cv_basics/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

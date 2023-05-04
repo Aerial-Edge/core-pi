@@ -16,7 +16,7 @@ class Controller(Node):
     def listener_callback(self, msg_in):
         self.object_follower(x=msg_in.data[0], y=msg_in.data[1], distance=msg_in.data[2])
         msg_out = Int32MultiArray()
-        msg_out.data = [self.object_follower.yaw_out, self.object_follower.throttle_out, self.object_follower.pitch_out ]
+        msg_out.data = [self.object_follower.yaw_out, self.object_follower.thrust_out, self.object_follower.pitch_out ]
         self.publisher.publish(msg_out)
 
 

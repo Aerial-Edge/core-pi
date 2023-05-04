@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'controller_node = drone_controller.controller_node:main',
             'testsub = drone_controller.testsub:main',
+            'tuning_node = drone_controller.tuning_node:main'
         ],
     },
 )
