@@ -71,6 +71,15 @@ class PID:
         self.kp = kp
         self.ki = ki
         self.kd = kd
+
+    def get_kp(self):
+        return self.kp
+    
+    def get_ki(self):
+        return self.ki
+    
+    def get_kd(self):
+        return self.kd
     
 
 
