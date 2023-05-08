@@ -7,7 +7,7 @@ class ObjectFollower:
 
     def __init__(self):
         self.yaw_pid = PID(160, 1.0, 0.0, 0.5, -1000, 1000)
-        self.thrust_pid = PID(160, 1.0, 0.5, 0.2, 0, 1000)
+        self.thrust_pid = PID(160, 1.0, 0.5, 0.2, 300, 700)
         self.pitch_pid = PID(70, 0.2, 1.0, 0.5, -1000, 1000)
         self.yaw_out = 0
         self.thrust_out = 0
