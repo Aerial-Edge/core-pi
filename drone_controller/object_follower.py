@@ -14,9 +14,14 @@ class ObjectFollower:
         self.pitch_out = 0
 
     def __call__(self, x, y, distance):
-        self.yaw_out = int(self.yaw_pid(x))
-        self.thrust_out = int(self.thrust_pid(y))
-        self.pitch_out = int(self.pitch_pid(distance))
+        if (x != -1):
+            self.yaw_out = int(self.yaw_pid(x))
+            self.thrust_out = int(self.thrust_pid(y))
+            self.pitch_out = int(self.pitch_pid(distance))
+        else:
+            self.yaw_out = 0
+            self.thrust_out = 300
+            self.pitch_out = 0
 
     def tune_yaw(self, kp, ki, kd):
         self.yaw_pid.tune(kp, ki, kd)
