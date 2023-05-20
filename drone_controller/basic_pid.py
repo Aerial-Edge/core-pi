@@ -17,13 +17,13 @@ class PID:
                  max_output: float = None,
                  dt_min: float = 0.01):
         
-        """
-        setpoint: PID controller setpoint
-        kp: proportional gain constant
-        ki: integral gain constant
-        kd: derivative gain constant
-        dt_min: minimum time between error corrections
-        """
+
+        # setpoint: PID controller setpoint
+        # kp: proportional gain constant
+        # ki: integral gain constant
+        # kd: derivative gain constant
+        # dt_min: minimum time between error corrections
+
         self.setpoint = setpoint
         self.kp, self.ki, self.kd = kp, ki, kd
         self.dt_min = dt_min
